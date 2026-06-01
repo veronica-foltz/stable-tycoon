@@ -20,9 +20,9 @@ color = Color(0.6901961, 0.5372549, 0.40784314, 1)
 
 [node name="Horse" type="TextureRect" parent="." unique_id=1936133364]
 layout_mode = 0
-offset_left = 529.0
+offset_left = 530.0
 offset_top = 160.0
-offset_right = 657.0
+offset_right = 658.0
 offset_bottom = 288.0
 texture = ExtResource("1_o5qli")
 
@@ -33,3 +33,12 @@ offset_top = 415.0
 offset_right = 115.0
 offset_bottom = 446.0
 text = "Feed Horse"
+
+[node name="Button" type="Button" parent="." unique_id=2082853874]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 413.0
+offset_right = 296.0
+offset_bottom = 444.0
+text = "Second Button
+"
