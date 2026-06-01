@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cmgda6tb7jxw5"]
+
+[ext_resource type="Texture2D" uid="uid://g1m0iwueooow" path="res://icon.svg" id="1_o5qli"]
+
+[node name="Main" type="Control" unique_id=170610734]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1607616042]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 1180.0
+offset_bottom = 456.0
+color = Color(0.6901961, 0.5372549, 0.40784314, 1)
+
+[node name="Horse" type="TextureRect" parent="." unique_id=1936133364]
+layout_mode = 0
+offset_left = 529.0
+offset_top = 160.0
+offset_right = 657.0
+offset_bottom = 288.0
+texture = ExtResource("1_o5qli")
+
+[node name="FeedButton" type="Button" parent="." unique_id=345679970]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 419.0
+offset_right = 110.0
+offset_bottom = 450.0
+text = "Feed Horse"
