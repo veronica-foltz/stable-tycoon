@@ -28,8 +28,8 @@ texture = ExtResource("1_o5qli")
 
 [node name="FeedButton" type="Button" parent="." unique_id=345679970]
 layout_mode = 0
-offset_left = 15.0
-offset_top = 419.0
-offset_right = 110.0
-offset_bottom = 450.0
+offset_left = 20.0
+offset_top = 415.0
+offset_right = 115.0
+offset_bottom = 446.0
 text = "Feed Horse"
