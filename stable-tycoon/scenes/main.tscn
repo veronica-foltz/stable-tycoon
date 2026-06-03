@@ -36,9 +36,17 @@ text = "Feed Horse"
 
 [node name="Button" type="Button" parent="." unique_id=2082853874]
 layout_mode = 0
-offset_left = 174.0
-offset_top = 413.0
-offset_right = 296.0
-offset_bottom = 444.0
+offset_left = 162.0
+offset_top = 416.0
+offset_right = 284.0
+offset_bottom = 447.0
 text = "Second Button
 "
+
+[node name="HungerLabel" type="Label" parent="." unique_id=2134655799]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 34.0
+offset_right = 80.0
+offset_bottom = 57.0
+text = "Hunger: 50"
