@@ -70,10 +70,10 @@ text = "Day: 1"
 
 [node name="EndDayButton" type="Button" parent="." unique_id=381692743]
 layout_mode = 0
-offset_left = 1037.0
-offset_top = 411.0
-offset_right = 1108.0
-offset_bottom = 442.0
+offset_left = 1041.0
+offset_top = 366.0
+offset_right = 1112.0
+offset_bottom = 397.0
 text = "End Day"
 
 [node name="MoneyLabel" type="Label" parent="." unique_id=851404742]
@@ -116,8 +116,25 @@ offset_right = 352.0
 offset_bottom = 391.0
 text = "Welcome to Stable Tycoon! "
 
+[node name="HealthLabel" type="Label" parent="." unique_id=2082709946]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 119.0
+text = "Health: 100"
+
+[node name="RestartButton" type="Button" parent="." unique_id=127704067]
+layout_mode = 0
+offset_left = 1020.0
+offset_top = 410.0
+offset_right = 1134.0
+offset_bottom = 441.0
+text = "Restart Game"
+
 [connection signal="pressed" from="FeedButton" to="." method="_on_feed_button_pressed"]
 [connection signal="pressed" from="EndDayButton" to="." method="_on_end_day_button_pressed"]
 [connection signal="pressed" from="BrushButton" to="." method="_on_brush_button_pressed"]
 [connection signal="pressed" from="RestButton" to="." method="_on_rest_button_pressed"]
 [connection signal="pressed" from="TrainButton" to="." method="_on_train_button_pressed"]
+[connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]

@@ -9,6 +9,7 @@ func _ready():
 	update_energy_label()
 	update_day_label()
 	update_money_label()
+	update_health_label()
 
 func update_hunger_label():
 	hunger_label.text = "Hunger: " + str(hunger)
@@ -74,13 +75,32 @@ func _on_end_day_button_pressed():
 	
 	money += happiness
 	
+	if hunger <= 20:
+		health -= 15
+		
+	if energy <= 20:
+		health -= 10
+		
+	if happiness <= 20:
+		health -= 10
+	
+	if health < 0:
+		health = 0
+	
+	if health <= 30:
+		update_status("Your horse is getting sick!")
+	
 	update_status("A new day begins.")
+	
+	if health <= 0:
+		update_status("Game over! Your horse became too sick.")
 
 	update_day_label()
 	update_hunger_label()
 	update_happiness_label()
 	update_energy_label()
 	update_money_label()
+	update_health_label()
 
 
 var money = 100
@@ -152,3 +172,27 @@ func _on_train_button_pressed():
 	
 func update_status(message):
 	status_label.text = message
+	
+var health = 100
+@onready var health_label = $HealthLabel
+
+func update_health_label():
+	health_label.text = "Health: " + str(health)
+
+
+func _on_restart_button_pressed() -> void:
+
+	day = 1
+	money = 100
+	hunger = 50
+	happiness = 70
+	energy = 80
+	health = 100
+	
+	update_day_label()
+	update_money_label()
+	update_hunger_label()
+	update_happiness_label()
+	update_energy_label()
+	update_health_label()
+	update_status("New game started!")
