@@ -36,21 +36,28 @@ offset_right = 115.0
 offset_bottom = 446.0
 text = "Feed Horse"
 
-[node name="Button" type="Button" parent="." unique_id=2082853874]
-layout_mode = 0
-offset_left = 162.0
-offset_top = 416.0
-offset_right = 284.0
-offset_bottom = 447.0
-text = "Second Button
-"
-
 [node name="HungerLabel" type="Label" parent="." unique_id=2134655799]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 34.0
-offset_right = 80.0
-offset_bottom = 57.0
+offset_left = 6.0
+offset_top = 9.0
+offset_right = 91.0
+offset_bottom = 32.0
 text = "Hunger: 50"
+
+[node name="HappinessLabel" type="Label" parent="." unique_id=1211012208]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 33.0
+offset_right = 114.0
+offset_bottom = 56.0
+text = "Happiness: 70"
+
+[node name="EnergyLabel" type="Label" parent="." unique_id=222197063]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 56.0
+offset_right = 87.0
+offset_bottom = 79.0
+text = "Energy: 80"
 
 [connection signal="pressed" from="FeedButton" to="." method="_on_feed_button_pressed"]
