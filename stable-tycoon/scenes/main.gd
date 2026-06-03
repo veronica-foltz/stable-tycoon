@@ -126,30 +126,29 @@ func _on_rest_button_pressed():
 	update_hunger_label()
 
 
-
 func _on_train_button_pressed():
 
-	money += 25
+	if energy < 15:
+		update_status("Your horse is too tired to train.")
+		return
 	
+	if hunger < 10:
+		update_status("Your horse is too hungry to train.")
+		return
+	
+	money += 25
 	energy -= 15
 	hunger -= 10
 	happiness += 5
 	
-	if energy < 0:
-		energy = 0
-		
-	if hunger < 0:
-		hunger = 0
-		
 	if happiness > 100:
 		happiness = 100
-		
-	update_status("Your horse trained and earned money!")
 		
 	update_money_label()
 	update_energy_label()
 	update_hunger_label()
 	update_happiness_label()
+	update_status("Your horse trained and earned $25!")
 	
 func update_status(message):
 	status_label.text = message
