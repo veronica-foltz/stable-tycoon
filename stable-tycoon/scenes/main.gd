@@ -16,6 +16,10 @@ func update_hunger_label():
 
 func _on_feed_button_pressed():
 
+	if game_over:
+		update_status("Game over. Restart to play again.")
+		return
+		
 	if hunger < 100:
 		hunger += 10
 		
@@ -59,6 +63,11 @@ func update_day_label():
 	day_label.text = "Day: " + str(day)
 
 func _on_end_day_button_pressed():
+	
+	if game_over:
+		update_status("Game over. Restart to play again.")
+		return
+		
 	day += 1
 	hunger -= 15
 	happiness -= 10
@@ -93,7 +102,10 @@ func _on_end_day_button_pressed():
 	update_status("A new day begins.")
 	
 	if health <= 0:
+		game_over = true
 		update_status("Game over! Your horse became too sick.")
+		
+	random_daily_event()
 
 	update_day_label()
 	update_hunger_label()
@@ -112,6 +124,10 @@ func update_money_label():
 
 func _on_brush_button_pressed():
 
+	if game_over:
+		update_status("Game over. Restart to play again.")
+		return
+	
 	happiness += 15
 	
 	if happiness > 100:
@@ -130,6 +146,10 @@ func _on_brush_button_pressed():
 
 func _on_rest_button_pressed():
 
+	if game_over:
+		update_status("Game over. Restart to play again.")
+		return
+		
 	energy += 20
 	
 	if energy > 100:
@@ -148,6 +168,10 @@ func _on_rest_button_pressed():
 
 func _on_train_button_pressed():
 
+	if game_over:
+		update_status("Game over. Restart to play again.")
+		return
+		
 	if energy < 15:
 		update_status("Your horse is too tired to train.")
 		return
@@ -182,6 +206,8 @@ func update_health_label():
 
 func _on_restart_button_pressed() -> void:
 
+	game_over = false
+	
 	day = 1
 	money = 100
 	hunger = 50
@@ -196,3 +222,22 @@ func _on_restart_button_pressed() -> void:
 	update_energy_label()
 	update_health_label()
 	update_status("New game started!")
+
+var game_over = false
+
+func random_daily_event():
+
+	var event = randi_range(1, 4)
+	if event == 1:
+		money += 20
+		update_status("A rider tipped you $20!")
+	elif event == 2:
+		money -= 15
+		update_status("You had to buy extra hay. -$15")
+	elif event == 3:
+		happiness += 10
+		if happiness > 100:
+			happiness = 100
+		update_status("Your horse enjoyed extra pasture time!")
+	else:
+		update_status("A quiet day at the stable.")
