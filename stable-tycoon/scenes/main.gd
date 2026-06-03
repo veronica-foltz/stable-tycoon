@@ -36,7 +36,9 @@ func _on_feed_button_pressed():
 		energy = 100
 	
 	update_status("You fed the horse!")
-		
+	
+	clamp_stats()
+	
 	update_hunger_label()
 	update_happiness_label()
 	update_energy_label()
@@ -107,6 +109,8 @@ func _on_end_day_button_pressed():
 		
 	random_daily_event()
 
+	clamp_stats()
+
 	update_day_label()
 	update_hunger_label()
 	update_happiness_label()
@@ -139,7 +143,9 @@ func _on_brush_button_pressed():
 		energy = 0
 	
 	update_status("You brushed the horse!")
-		
+	
+	clamp_stats()
+	
 	update_happiness_label()
 	update_energy_label()
 
@@ -161,7 +167,9 @@ func _on_rest_button_pressed():
 		hunger = 0
 	
 	update_status("Your horse rested.")
-		
+	
+	clamp_stats()
+	
 	update_energy_label()
 	update_hunger_label()
 
@@ -187,7 +195,9 @@ func _on_train_button_pressed():
 	
 	if happiness > 100:
 		happiness = 100
-		
+	
+	clamp_stats()
+	
 	update_money_label()
 	update_energy_label()
 	update_hunger_label()
@@ -227,6 +237,8 @@ var game_over = false
 
 func random_daily_event():
 
+	clamp_stats()
+	
 	var event = randi_range(1, 4)
 	if event == 1:
 		money += 20
@@ -241,3 +253,24 @@ func random_daily_event():
 		update_status("Your horse enjoyed extra pasture time!")
 	else:
 		update_status("A quiet day at the stable.")
+	
+func clamp_stats():
+
+	if hunger < 0:
+		hunger = 0
+	if hunger > 100:
+		hunger = 100
+	if happiness < 0:
+		happiness = 0
+	if happiness > 100:
+		happiness = 100
+	if energy < 0:
+		energy = 0
+	if energy > 100:
+		energy = 100
+	if health < 0:
+		health = 0
+	if health > 100:
+		health = 100
+	if money < 0:
+		money = 0
