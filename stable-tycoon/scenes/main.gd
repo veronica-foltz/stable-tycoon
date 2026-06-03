@@ -29,6 +29,8 @@ func _on_feed_button_pressed():
 	
 	if energy > 100:
 		energy = 100
+	
+	update_status("You fed the horse!")
 		
 	update_hunger_label()
 	update_happiness_label()
@@ -47,9 +49,10 @@ var energy = 80
 func update_energy_label():
 	energy_label.text = "Energy: " + str(energy)
 	
-
 var day = 1
 @onready var day_label = $DayLabel
+
+@onready var status_label = $StatusLabel
 
 func update_day_label():
 	day_label.text = "Day: " + str(day)
@@ -70,6 +73,8 @@ func _on_end_day_button_pressed():
 		energy = 0
 	
 	money += happiness
+	
+	update_status("A new day begins.")
 
 	update_day_label()
 	update_hunger_label()
@@ -96,6 +101,8 @@ func _on_brush_button_pressed():
 	
 	if energy < 0:
 		energy = 0
+	
+	update_status("You brushed the horse!")
 		
 	update_happiness_label()
 	update_energy_label()
@@ -112,6 +119,8 @@ func _on_rest_button_pressed():
 	
 	if hunger < 0:
 		hunger = 0
+	
+	update_status("Your horse rested.")
 		
 	update_energy_label()
 	update_hunger_label()
@@ -135,7 +144,12 @@ func _on_train_button_pressed():
 	if happiness > 100:
 		happiness = 100
 		
+	update_status("Your horse trained and earned money!")
+		
 	update_money_label()
 	update_energy_label()
 	update_hunger_label()
 	update_happiness_label()
+	
+func update_status(message):
+	status_label.text = message
