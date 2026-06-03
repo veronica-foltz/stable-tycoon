@@ -7,9 +7,10 @@ func _ready():
 	update_hunger_label()
 	update_happiness_label()
 	update_energy_label()
+	update_day_label()
 
 func update_hunger_label():
-	hunger_label.text = "Horse Hunger: " + str(hunger)
+	hunger_label.text = "Hunger: " + str(hunger)
 
 func _on_feed_button_pressed():
 
@@ -44,3 +45,30 @@ var energy = 80
 
 func update_energy_label():
 	energy_label.text = "Energy: " + str(energy)
+	
+
+var day = 1
+@onready var day_label = $DayLabel
+
+func update_day_label():
+	day_label.text = "Day: " + str(day)
+
+func _on_end_day_button_pressed():
+	day += 1
+	hunger -= 15
+	happiness -= 10
+	energy -= 20
+
+	if hunger < 0:
+		hunger = 0
+		
+	if happiness < 0:
+		happiness = 0
+		
+	if energy < 0:
+		energy = 0
+
+	update_day_label()
+	update_hunger_label()
+	update_happiness_label()
+	update_energy_label()
