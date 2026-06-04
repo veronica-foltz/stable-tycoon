@@ -28,109 +28,130 @@ offset_bottom = 1025.0
 scale = Vector2(0.45, 0.45)
 texture = ExtResource("3_sugp2")
 
+[node name="StatsPanel" type="Panel" parent="." unique_id=1929536375]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 24.0
+offset_right = 193.0
+offset_bottom = 149.0
+
+[node name="MoneyPanel" type="Panel" parent="." unique_id=18973845]
+layout_mode = 0
+offset_left = 611.0
+offset_top = 25.0
+offset_right = 745.0
+offset_bottom = 62.0
+
+[node name="NamePanel" type="Panel" parent="." unique_id=257235431]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 7.0
+offset_right = 541.0
+offset_bottom = 47.0
+
 [node name="FeedButton" type="Button" parent="." unique_id=345679970]
 layout_mode = 0
-offset_left = 36.0
-offset_top = 147.0
-offset_right = 131.0
-offset_bottom = 178.0
-text = "Feed Horse"
+offset_left = 15.0
+offset_top = 294.0
+offset_right = 200.0
+offset_bottom = 329.0
+text = "🍎 Feed Horse"
 
 [node name="HungerLabel" type="Label" parent="." unique_id=2134655799]
 layout_mode = 0
-offset_left = 14.0
-offset_top = 30.0
-offset_right = 99.0
-offset_bottom = 56.0
-text = "Hunger: 50"
+offset_left = 56.0
+offset_top = 54.0
+offset_right = 163.0
+offset_bottom = 77.0
+text = "🍎 Hunger: 50"
 
 [node name="HappinessLabel" type="Label" parent="." unique_id=1211012208]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 52.0
-offset_right = 121.0
-offset_bottom = 75.0
-text = "Happiness: 70"
+offset_left = 45.0
+offset_top = 76.0
+offset_right = 175.0
+offset_bottom = 99.0
+text = "😊 Happiness: 70"
 
 [node name="EnergyLabel" type="Label" parent="." unique_id=222197063]
 layout_mode = 0
-offset_left = 14.0
-offset_top = 73.0
-offset_right = 94.0
-offset_bottom = 97.0
-text = "Energy: 80"
+offset_left = 53.0
+offset_top = 96.0
+offset_right = 155.0
+offset_bottom = 120.0
+text = "⚡ Energy: 80"
 
 [node name="DayLabel" type="Label" parent="." unique_id=1117158441]
 layout_mode = 0
-offset_left = 14.0
-offset_top = 8.0
-offset_right = 62.0
-offset_bottom = 31.0
-text = "Day: 1"
+offset_left = 71.0
+offset_top = 30.0
+offset_right = 145.0
+offset_bottom = 53.0
+text = "📅  Day: 1"
 
 [node name="EndDayButton" type="Button" parent="." unique_id=381692743]
 layout_mode = 0
-offset_left = 53.0
-offset_top = 365.0
-offset_right = 124.0
-offset_bottom = 396.0
-text = "End Day"
+offset_left = 22.0
+offset_top = 378.0
+offset_right = 202.0
+offset_bottom = 413.0
+text = "🌙 End Day"
 
 [node name="MoneyLabel" type="Label" parent="." unique_id=851404742]
 layout_mode = 0
-offset_left = 645.0
-offset_top = 8.0
-offset_right = 743.0
-offset_bottom = 31.0
-text = "Money: $100"
+offset_left = 614.0
+offset_top = 30.0
+offset_right = 738.0
+offset_bottom = 56.0
+text = " 💰 Money: $100"
 
 [node name="BrushButton" type="Button" parent="." unique_id=2146063052]
 layout_mode = 0
-offset_left = 32.0
-offset_top = 188.0
-offset_right = 136.0
-offset_bottom = 219.0
-text = "Brush Horse"
+offset_left = 13.0
+offset_top = 257.0
+offset_right = 198.0
+offset_bottom = 292.0
+text = "🪥 Brush Horse"
 
 [node name="RestButton" type="Button" parent="." unique_id=211404699]
 layout_mode = 0
-offset_left = 27.0
+offset_left = 17.0
 offset_top = 225.0
-offset_right = 147.0
-offset_bottom = 256.0
-text = "Let Horse Rest"
+offset_right = 202.0
+offset_bottom = 260.0
+text = "😴 Let Horse Rest"
 
 [node name="TrainButton" type="Button" parent="." unique_id=827770987]
 layout_mode = 0
-offset_left = 34.0
-offset_top = 263.0
-offset_right = 132.0
-offset_bottom = 294.0
-text = "Train Horse"
+offset_left = 17.0
+offset_top = 190.0
+offset_right = 202.0
+offset_bottom = 225.0
+text = "🏋️ Train Horse"
 
 [node name="StatusLabel" type="Label" parent="." unique_id=232731945]
 layout_mode = 0
-offset_left = 271.0
-offset_top = 12.0
-offset_right = 483.0
-offset_bottom = 35.0
-text = "Welcome to Stable Tycoon! "
+offset_left = 275.0
+offset_top = 13.0
+offset_right = 535.0
+offset_bottom = 36.0
+text = " 🐴 Welcome to Stable Tycoon! 🐴 "
 
 [node name="HealthLabel" type="Label" parent="." unique_id=2082709946]
 layout_mode = 0
-offset_left = 14.0
-offset_top = 96.0
-offset_right = 102.0
-offset_bottom = 119.0
-text = "Health: 100"
+offset_left = 54.0
+offset_top = 118.0
+offset_right = 164.0
+offset_bottom = 141.0
+text = "❤️ Health: 100"
 
 [node name="RestartButton" type="Button" parent="." unique_id=127704067]
 layout_mode = 0
-offset_left = 33.0
-offset_top = 412.0
-offset_right = 147.0
-offset_bottom = 443.0
-text = "Restart Game"
+offset_left = 23.0
+offset_top = 414.0
+offset_right = 203.0
+offset_bottom = 449.0
+text = "🔄 Restart Game"
 
 [connection signal="pressed" from="FeedButton" to="." method="_on_feed_button_pressed"]
 [connection signal="pressed" from="EndDayButton" to="." method="_on_end_day_button_pressed"]

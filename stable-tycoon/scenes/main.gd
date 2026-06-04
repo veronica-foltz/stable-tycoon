@@ -12,7 +12,7 @@ func _ready():
 	update_health_label()
 
 func update_hunger_label():
-	hunger_label.text = "Hunger: " + str(hunger)
+	hunger_label.text = "🍎 Hunger: " + str(hunger)
 
 func _on_feed_button_pressed():
 
@@ -39,13 +39,13 @@ var happiness = 70
 @onready var happiness_label = $HappinessLabel
 
 func update_happiness_label():
-	happiness_label.text = "Happiness: " + str(happiness)
+	happiness_label.text = "😊 Happiness: " + str(happiness)
 	
 var energy = 80
 @onready var energy_label = $EnergyLabel
 
 func update_energy_label():
-	energy_label.text = "Energy: " + str(energy)
+	energy_label.text = "⚡ Energy: " + str(energy)
 	
 var day = 1
 @onready var day_label = $DayLabel
@@ -53,7 +53,7 @@ var day = 1
 @onready var status_label = $StatusLabel
 
 func update_day_label():
-	day_label.text = "Day: " + str(day)
+	day_label.text = "📅  Day: " + str(day)
 
 func _on_end_day_button_pressed():
 	
@@ -114,7 +114,7 @@ var money = 100
 @onready var money_label = $MoneyLabel
 
 func update_money_label():
-	money_label.text = "Money: $" + str(money)
+	money_label.text = "💰 Money: $" + str(money)
 
 
 func _on_brush_button_pressed():
@@ -202,7 +202,7 @@ var health = 100
 @onready var health_label = $HealthLabel
 
 func update_health_label():
-	health_label.text = "Health: " + str(health)
+	health_label.text = "❤️ Health: " + str(health)
 
 
 func _on_restart_button_pressed() -> void:
