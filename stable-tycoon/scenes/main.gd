@@ -19,29 +19,20 @@ func _on_feed_button_pressed():
 	if game_over:
 		update_status("Game over. Restart to play again.")
 		return
-		
-	if hunger < 100:
-		hunger += 10
-		
-		if hunger > 100:
-			hunger = 100
-			
+	if money < 5:
+		update_status("Not enough money to buy feed.")
+		return
+	money -= 5
+	
+	hunger += 10
 	happiness += 5
-	if happiness > 100:
-		happiness = 100
-		
 	energy += 2
-	
-	if energy > 100:
-		energy = 100
-	
-	update_status("You fed the horse!")
-	
 	clamp_stats()
-	
+	update_money_label()
 	update_hunger_label()
 	update_happiness_label()
 	update_energy_label()
+	update_status("You fed the horse. Feed cost $5.")
 
 
 var happiness = 70
