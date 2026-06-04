@@ -54,10 +54,10 @@ offset_bottom = 62.0
 
 [node name="NamePanel" type="Panel" parent="." unique_id=257235431]
 layout_mode = 0
-offset_left = 213.0
-offset_top = 1.0
-offset_right = 604.0
-offset_bottom = 41.0
+offset_left = 211.0
+offset_top = 2.0
+offset_right = 602.0
+offset_bottom = 42.0
 
 [node name="FeedButton" type="Button" parent="." unique_id=345679970]
 layout_mode = 0
@@ -151,7 +151,7 @@ offset_left = 233.0
 offset_top = 6.0
 offset_right = 574.0
 offset_bottom = 51.0
-theme_override_font_sizes/font_size = 19
+theme_override_font_sizes/font_size = 18
 text = " 🐴 Welcome to Stable Tycoon! 🐴 "
 
 [node name="HealthLabel" type="Label" parent="." unique_id=2082709946]
