@@ -54,10 +54,10 @@ offset_bottom = 62.0
 
 [node name="NamePanel" type="Panel" parent="." unique_id=257235431]
 layout_mode = 0
-offset_left = 272.0
-offset_top = 7.0
-offset_right = 541.0
-offset_bottom = 47.0
+offset_left = 213.0
+offset_top = 1.0
+offset_right = 604.0
+offset_bottom = 41.0
 
 [node name="FeedButton" type="Button" parent="." unique_id=345679970]
 layout_mode = 0
@@ -103,9 +103,9 @@ text = "📅  Day: 1"
 
 [node name="EndDayButton" type="Button" parent="." unique_id=381692743]
 layout_mode = 0
-offset_left = 22.0
+offset_left = 33.0
 offset_top = 378.0
-offset_right = 202.0
+offset_right = 213.0
 offset_bottom = 413.0
 theme_override_styles/hover = SubResource("StyleBoxFlat_sugp2")
 text = "🌙 End Day"
@@ -147,10 +147,11 @@ text = "🏋️ Train Horse"
 
 [node name="StatusLabel" type="Label" parent="." unique_id=232731945]
 layout_mode = 0
-offset_left = 275.0
-offset_top = 13.0
-offset_right = 535.0
-offset_bottom = 36.0
+offset_left = 233.0
+offset_top = 6.0
+offset_right = 574.0
+offset_bottom = 51.0
+theme_override_font_sizes/font_size = 19
 text = " 🐴 Welcome to Stable Tycoon! 🐴 "
 
 [node name="HealthLabel" type="Label" parent="." unique_id=2082709946]
@@ -163,9 +164,9 @@ text = "❤️ Health: 100"
 
 [node name="RestartButton" type="Button" parent="." unique_id=127704067]
 layout_mode = 0
-offset_left = 23.0
+offset_left = 34.0
 offset_top = 414.0
-offset_right = 203.0
+offset_right = 214.0
 offset_bottom = 449.0
 theme_override_styles/hover = SubResource("StyleBoxFlat_sugp2")
 text = "🔄 Restart Game"
