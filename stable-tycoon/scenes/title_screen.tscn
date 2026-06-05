@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c1ejnoanotp5q"]
 
-[ext_resource type="Script" uid="uid://bgmg73jc5qjg0" path="res://title_screen.gd" id="1_v6p8y"]
+[ext_resource type="Script" uid="uid://bgmg73jc5qjg0" path="res://scenes/title_screen.gd" id="1_v6p8y"]
 [ext_resource type="Texture2D" uid="uid://drbp5rt1os5qe" path="res://assets/images/Stable Tycoon TS.png" id="2_ak2if"]
 
 [node name="TitleScreen" type="Control" unique_id=932235488]
@@ -29,19 +29,29 @@ text = "🐴 STABLE TYCOON 🐴"
 layout_mode = 0
 offset_left = 22.0
 offset_top = 4.0
-offset_right = 977.0
-offset_bottom = 584.0
+offset_right = 1175.0
+offset_bottom = 651.0
 texture = ExtResource("2_ak2if")
 expand_mode = 1
 stretch_mode = 6
 
 [node name="StartButton" type="Button" parent="." unique_id=941371321]
 layout_mode = 0
-offset_left = 288.0
-offset_top = 360.0
-offset_right = 426.0
-offset_bottom = 402.0
-theme_override_font_sizes/font_size = 24
-text = "Start Game"
+offset_left = 340.0
+offset_top = 421.0
+offset_right = 527.0
+offset_bottom = 471.0
+theme_override_font_sizes/font_size = 28
+text = " Start Game "
+
+[node name="SettingsButton" type="Button" parent="." unique_id=1322746834]
+layout_mode = 0
+offset_left = 338.0
+offset_top = 504.0
+offset_right = 526.0
+offset_bottom = 554.0
+theme_override_font_sizes/font_size = 28
+text = "    Settings    "
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]

@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://dviugl4fjkblh"]
+
+[ext_resource type="Script" uid="uid://cquf43rfmmj54" path="res://scenes/settings_screen.gd" id="1_00yke"]
+[ext_resource type="Texture2D" uid="uid://c0bovgnp80x3e" path="res://assets/images/Horse Final Picture.png" id="2_pfwel"]
+
+[node name="SettingsScreen" type="Control" unique_id=1962412417]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_00yke")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=493702878]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 646.0
+texture = ExtResource("2_pfwel")
+expand_mode = 1
+
+[node name="OverlayPanel" type="Panel" parent="." unique_id=1898146447]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 1155.0
+offset_bottom = 649.0
+
+[node name="TitleLabel" type="Label" parent="." unique_id=205649971]
+layout_mode = 0
+offset_left = 460.0
+offset_top = 10.0
+offset_right = 626.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 42
+text = "Settings"
+
+[node name="MusicButton" type="Button" parent="." unique_id=1032030744]
+layout_mode = 0
+offset_left = 157.0
+offset_top = 255.0
+offset_right = 307.0
+offset_bottom = 329.0
+theme_override_font_sizes/font_size = 24
+text = "Music: On"
+
+[node name="SoundButton" type="Button" parent="." unique_id=421759137]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 373.0
+offset_right = 316.0
+offset_bottom = 441.0
+theme_override_font_sizes/font_size = 24
+text = "Sound: On"
+
+[node name="BackButton" type="Button" parent="." unique_id=1450802505]
+layout_mode = 0
+offset_left = 932.0
+offset_top = 566.0
+offset_right = 1131.0
+offset_bottom = 628.0
+theme_override_font_sizes/font_size = 28
+text = "🏠 Main Menu"
+
+[node name="GameButton" type="Button" parent="." unique_id=13115776]
+layout_mode = 0
+offset_left = 930.0
+offset_top = 498.0
+offset_right = 1130.0
+offset_bottom = 551.0
+theme_override_font_sizes/font_size = 28
+text = "⬅  To Game"
+
+[connection signal="pressed" from="MusicButton" to="." method="_on_music_button_pressed"]
+[connection signal="pressed" from="SoundButton" to="." method="_on_sound_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="GameButton" to="." method="_on_game_button_pressed"]
