@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cmgda6tb7jxw5"]
 
 [ext_resource type="Script" uid="uid://djb77cmbuwl68" path="res://scenes/main.gd" id="1_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://bj1y44nwuv73d" path="res://assets/images/banner.png" id="3_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://c0bovgnp80x3e" path="res://assets/images/Horse Final Picture.png" id="3_sugp2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wfyh"]
@@ -8,6 +9,11 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sugp2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jyhfs"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.92268294, 0.7977143, 0.08571855, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tbgi4"]
 
@@ -33,141 +39,144 @@ color = Color(0.6901961, 0.5372549, 0.40784314, 1)
 layout_mode = 0
 offset_left = 1.0
 offset_top = 1.0
-offset_right = 1673.0
-offset_bottom = 1025.0
+offset_right = 2558.7778
+offset_bottom = 1436.5557
 scale = Vector2(0.45, 0.45)
 texture = ExtResource("3_sugp2")
+expand_mode = 1
+stretch_mode = 6
 
 [node name="StatsPanel" type="Panel" parent="." unique_id=1929536375]
 layout_mode = 0
-offset_left = 33.0
-offset_top = 24.0
-offset_right = 193.0
-offset_bottom = 149.0
+offset_left = 85.0
+offset_top = 130.0
+offset_right = 245.0
+offset_bottom = 255.0
 
 [node name="MoneyPanel" type="Panel" parent="." unique_id=18973845]
 layout_mode = 0
-offset_left = 611.0
-offset_top = 25.0
-offset_right = 745.0
-offset_bottom = 62.0
+offset_left = 984.0
+offset_top = 36.0
+offset_right = 1118.0
+offset_bottom = 73.0
 
-[node name="NamePanel" type="Panel" parent="." unique_id=257235431]
+[node name="Banner" type="TextureRect" parent="." unique_id=1302856123]
 layout_mode = 0
-offset_left = 211.0
-offset_top = 2.0
-offset_right = 602.0
-offset_bottom = 42.0
+offset_left = 14.0
+offset_top = -13.0
+offset_right = 326.0
+offset_bottom = 203.0
+texture = ExtResource("3_jyhfs")
+expand_mode = 1
 
 [node name="FeedButton" type="Button" parent="." unique_id=345679970]
 layout_mode = 0
-offset_left = 24.0
-offset_top = 184.0
-offset_right = 209.0
-offset_bottom = 219.0
+offset_left = 71.0
+offset_top = 292.0
+offset_right = 256.0
+offset_bottom = 327.0
 theme_override_colors/font_hover_color = Color(0.97922903, 0.9612257, 0.9492242, 1)
 theme_override_styles/hover = SubResource("StyleBoxFlat_0wfyh")
 text = "🍎 Feed Horse"
 
 [node name="HungerLabel" type="Label" parent="." unique_id=2134655799]
 layout_mode = 0
-offset_left = 56.0
-offset_top = 54.0
-offset_right = 163.0
-offset_bottom = 77.0
+offset_left = 106.0
+offset_top = 164.0
+offset_right = 213.0
+offset_bottom = 187.0
 text = "🍎 Hunger: 50"
 
 [node name="HappinessLabel" type="Label" parent="." unique_id=1211012208]
 layout_mode = 0
-offset_left = 45.0
-offset_top = 76.0
-offset_right = 175.0
-offset_bottom = 99.0
+offset_left = 99.0
+offset_top = 186.0
+offset_right = 229.0
+offset_bottom = 209.0
 text = "😊 Happiness: 70"
 
 [node name="EnergyLabel" type="Label" parent="." unique_id=222197063]
 layout_mode = 0
-offset_left = 53.0
-offset_top = 96.0
-offset_right = 155.0
-offset_bottom = 120.0
+offset_left = 108.0
+offset_top = 206.0
+offset_right = 210.0
+offset_bottom = 230.0
 text = "⚡ Energy: 80"
 
 [node name="DayLabel" type="Label" parent="." unique_id=1117158441]
 layout_mode = 0
-offset_left = 71.0
-offset_top = 30.0
-offset_right = 145.0
-offset_bottom = 53.0
+offset_left = 119.0
+offset_top = 139.0
+offset_right = 193.0
+offset_bottom = 162.0
 text = "📅  Day: 1"
 
 [node name="EndDayButton" type="Button" parent="." unique_id=381692743]
 layout_mode = 0
-offset_left = 33.0
-offset_top = 378.0
-offset_right = 213.0
-offset_bottom = 413.0
+offset_left = 86.0
+offset_top = 542.0
+offset_right = 266.0
+offset_bottom = 577.0
 theme_override_styles/hover = SubResource("StyleBoxFlat_sugp2")
 text = "🌙 End Day"
 
 [node name="MoneyLabel" type="Label" parent="." unique_id=851404742]
 layout_mode = 0
-offset_left = 614.0
-offset_top = 30.0
-offset_right = 738.0
-offset_bottom = 56.0
+offset_left = 985.0
+offset_top = 42.0
+offset_right = 1109.0
+offset_bottom = 68.0
 text = " 💰 Money: $100"
 
 [node name="BrushButton" type="Button" parent="." unique_id=2146063052]
 layout_mode = 0
-offset_left = 18.0
-offset_top = 219.0
-offset_right = 203.0
-offset_bottom = 254.0
+offset_left = 74.0
+offset_top = 349.0
+offset_right = 259.0
+offset_bottom = 384.0
 theme_override_styles/hover = SubResource("StyleBoxFlat_jyhfs")
 text = "🪥 Brush Horse"
 
 [node name="RestButton" type="Button" parent="." unique_id=211404699]
 layout_mode = 0
-offset_left = 21.0
-offset_top = 253.0
-offset_right = 206.0
-offset_bottom = 288.0
+offset_left = 72.0
+offset_top = 400.0
+offset_right = 257.0
+offset_bottom = 435.0
 theme_override_styles/hover = SubResource("StyleBoxFlat_tbgi4")
 text = "😴 Let Horse Rest"
 
 [node name="TrainButton" type="Button" parent="." unique_id=827770987]
 layout_mode = 0
-offset_left = 22.0
-offset_top = 289.0
-offset_right = 207.0
-offset_bottom = 324.0
+offset_left = 73.0
+offset_top = 447.0
+offset_right = 258.0
+offset_bottom = 482.0
 theme_override_styles/hover = SubResource("StyleBoxFlat_tefeu")
 text = "🏋️ Train Horse"
 
 [node name="StatusLabel" type="Label" parent="." unique_id=232731945]
 layout_mode = 0
-offset_left = 233.0
-offset_top = 6.0
-offset_right = 574.0
-offset_bottom = 51.0
+offset_left = 775.0
+offset_top = 588.0
+offset_right = 1116.0
+offset_bottom = 633.0
 theme_override_font_sizes/font_size = 18
-text = " 🐴 Welcome to Stable Tycoon! 🐴 "
 
 [node name="HealthLabel" type="Label" parent="." unique_id=2082709946]
 layout_mode = 0
-offset_left = 54.0
-offset_top = 118.0
-offset_right = 164.0
-offset_bottom = 141.0
+offset_left = 110.0
+offset_top = 227.0
+offset_right = 220.0
+offset_bottom = 250.0
 text = "❤️ Health: 100"
 
 [node name="RestartButton" type="Button" parent="." unique_id=127704067]
 layout_mode = 0
-offset_left = 34.0
-offset_top = 414.0
-offset_right = 214.0
-offset_bottom = 449.0
+offset_left = 86.0
+offset_top = 591.0
+offset_right = 266.0
+offset_bottom = 626.0
 theme_override_styles/hover = SubResource("StyleBoxFlat_sugp2")
 text = "🔄 Restart Game"
 
