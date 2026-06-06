@@ -80,40 +80,40 @@ text = "🍎 Feed Horse"
 
 [node name="HungerLabel" type="Label" parent="." unique_id=2134655799]
 layout_mode = 0
-offset_left = 873.0
-offset_top = 163.0
-offset_right = 1051.0
-offset_bottom = 214.08109
+offset_left = 843.0
+offset_top = 167.0
+offset_right = 1021.0
+offset_bottom = 218.08109
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 36
 text = "🍎 Hunger: 50"
 
 [node name="HappinessLabel" type="Label" parent="." unique_id=1211012208]
 layout_mode = 0
-offset_left = 871.0
-offset_top = 209.0
-offset_right = 1079.0
-offset_bottom = 260.0811
+offset_left = 841.0
+offset_top = 213.0
+offset_right = 1049.0
+offset_bottom = 264.0811
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 36
 text = "😊 Happiness: 70"
 
 [node name="EnergyLabel" type="Label" parent="." unique_id=222197063]
 layout_mode = 0
-offset_left = 871.0
-offset_top = 251.0
-offset_right = 1044.0
-offset_bottom = 302.0811
+offset_left = 841.0
+offset_top = 255.0
+offset_right = 1014.0
+offset_bottom = 306.0811
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 36
 text = "⚡ Energy: 80"
 
 [node name="DayLabel" type="Label" parent="." unique_id=1117158441]
 layout_mode = 0
-offset_left = 872.0
-offset_top = 115.0
-offset_right = 992.0
-offset_bottom = 166.08109
+offset_left = 842.0
+offset_top = 119.0
+offset_right = 962.0
+offset_bottom = 170.08109
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 36
 text = "📅  Day: 1"
@@ -174,19 +174,19 @@ text = "🏋️ Train Horse"
 
 [node name="StatusLabel" type="Label" parent="." unique_id=232731945]
 layout_mode = 0
-offset_left = 338.0
-offset_top = 588.0
-offset_right = 679.0
-offset_bottom = 640.0
+offset_left = 368.0
+offset_top = 586.0
+offset_right = 709.0
+offset_bottom = 638.0
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 42
 
 [node name="HealthLabel" type="Label" parent="." unique_id=2082709946]
 layout_mode = 0
-offset_left = 873.0
-offset_top = 292.0
-offset_right = 1052.0
-offset_bottom = 343.0811
+offset_left = 843.0
+offset_top = 296.0
+offset_right = 1022.0
+offset_bottom = 347.0811
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 36
 text = "❤️ Health: 100"
