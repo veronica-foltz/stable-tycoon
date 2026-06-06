@@ -6,10 +6,10 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s4lrb"]
 bg_color = Color(0.2901961, 0.20392157, 0.14901961, 0.627451)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
 border_color = Color(0.7607843, 0.6431373, 0.42745098, 1)
 
 [node name="TitleScreen" type="Control" unique_id=932235488]

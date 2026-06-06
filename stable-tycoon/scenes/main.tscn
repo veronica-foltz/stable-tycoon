@@ -16,10 +16,10 @@ border_color = Color(0.7607843, 0.6431373, 0.42745098, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tipki"]
 bg_color = Color(0.18431373, 0.105882354, 0.07058824, 0.47058824)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
 border_color = Color(0.8392157, 0.7372549, 0.5176471, 1)
 
 [node name="Main" type="Control" unique_id=170610734]

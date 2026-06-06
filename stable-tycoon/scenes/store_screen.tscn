@@ -7,18 +7,18 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7rjp1"]
 bg_color = Color(0.2901961, 0.20392157, 0.14901961, 0.627451)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
 border_color = Color(0.7607843, 0.6431373, 0.42745098, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wq32e"]
 bg_color = Color(0.2901961, 0.20392157, 0.14901961, 0.627451)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
 border_color = Color(0.7607843, 0.6431373, 0.42745098, 1)
 
 [node name="StoreScreen" type="Control" unique_id=664717561]
@@ -75,7 +75,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_wq32e")
 layout_mode = 0
 offset_left = 492.0
 offset_top = 9.0
-offset_right = 636.0
+offset_right = 638.0
 offset_bottom = 73.431816
 theme_override_fonts/font = ExtResource("3_6yotf")
 theme_override_font_sizes/font_size = 45
