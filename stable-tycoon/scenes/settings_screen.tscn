@@ -2,6 +2,23 @@
 
 [ext_resource type="Script" uid="uid://cquf43rfmmj54" path="res://scenes/settings_screen.gd" id="1_00yke"]
 [ext_resource type="Texture2D" uid="uid://c0bovgnp80x3e" path="res://assets/images/Horse Final Picture.png" id="2_pfwel"]
+[ext_resource type="FontFile" uid="uid://cqrg3tjofq1e3" path="res://assets/fonts/BroncoPersonalUse.ttf" id="3_qrqa7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pt01f"]
+bg_color = Color(0.2901961, 0.20392157, 0.14901961, 0.627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.7607843, 0.6431373, 0.42745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n20dh"]
+bg_color = Color(0.2901961, 0.20392157, 0.14901961, 0.627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.7607843, 0.6431373, 0.42745098, 1)
 
 [node name="SettingsScreen" type="Control" unique_id=1962412417]
 layout_mode = 3
@@ -25,49 +42,68 @@ offset_left = 4.0
 offset_right = 1155.0
 offset_bottom = 649.0
 
+[node name="TitlePanel" type="Panel" parent="." unique_id=1424387066]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.035
+offset_left = 410.0
+offset_top = 12.0
+offset_right = 611.68
+offset_bottom = 73.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_pt01f")
+
 [node name="TitleLabel" type="Label" parent="." unique_id=205649971]
 layout_mode = 0
-offset_left = 460.0
-offset_top = 10.0
-offset_right = 626.0
-offset_bottom = 68.0
-theme_override_font_sizes/font_size = 42
-text = "Settings"
+offset_left = 427.0
+offset_top = 9.0
+offset_right = 620.0
+offset_bottom = 73.431816
+theme_override_fonts/font = ExtResource("3_qrqa7")
+theme_override_font_sizes/font_size = 45
+text = "🔧  Settings"
 
 [node name="MusicButton" type="Button" parent="." unique_id=1032030744]
 layout_mode = 0
-offset_left = 157.0
-offset_top = 255.0
-offset_right = 307.0
-offset_bottom = 329.0
-theme_override_font_sizes/font_size = 24
-text = "Music: On"
+offset_left = 162.0
+offset_top = 195.0
+offset_right = 388.0
+offset_bottom = 303.0
+theme_override_fonts/font = ExtResource("3_qrqa7")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_n20dh")
+text = "  Music: On   "
 
 [node name="SoundButton" type="Button" parent="." unique_id=421759137]
 layout_mode = 0
 offset_left = 161.0
-offset_top = 373.0
-offset_right = 316.0
-offset_bottom = 441.0
-theme_override_font_sizes/font_size = 24
-text = "Sound: On"
+offset_top = 342.0
+offset_right = 391.0
+offset_bottom = 444.0
+theme_override_fonts/font = ExtResource("3_qrqa7")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_n20dh")
+text = " Sound: On "
 
 [node name="BackButton" type="Button" parent="." unique_id=1450802505]
 layout_mode = 0
-offset_left = 932.0
-offset_top = 566.0
-offset_right = 1131.0
-offset_bottom = 628.0
-theme_override_font_sizes/font_size = 28
+offset_left = 865.0
+offset_top = 522.0
+offset_right = 1126.0
+offset_bottom = 613.0
+theme_override_fonts/font = ExtResource("3_qrqa7")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_n20dh")
 text = "🏠 Main Menu"
 
 [node name="GameButton" type="Button" parent="." unique_id=13115776]
 layout_mode = 0
-offset_left = 930.0
-offset_top = 498.0
-offset_right = 1130.0
-offset_bottom = 551.0
-theme_override_font_sizes/font_size = 28
+offset_left = 861.0
+offset_top = 390.0
+offset_right = 1123.0
+offset_bottom = 488.0
+theme_override_fonts/font = ExtResource("3_qrqa7")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_n20dh")
 text = "⬅  To Game"
 
 [connection signal="pressed" from="MusicButton" to="." method="_on_music_button_pressed"]

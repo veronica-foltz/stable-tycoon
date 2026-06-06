@@ -23,9 +23,9 @@ func _ready():
 		
 	sound_on = not AudioServer.is_bus_mute(AudioServer.get_bus_index("Master"))
 	if sound_on:
-		sound_button.text = "Sound Effects: On"
+		sound_button.text = "Sound: On"
 	else:
-		sound_button.text = "Sound Effects: Off"	
+		sound_button.text = "Sound: Off"	
 
 func _on_music_button_pressed():
 
@@ -43,9 +43,9 @@ func _on_sound_button_pressed():
 	var bus_index = AudioServer.get_bus_index("Master")
 	AudioServer.set_bus_mute(bus_index, not sound_on)
 	if sound_on:
-		sound_button.text = "Sound Effects: On"
+		sound_button.text = "Sound: On"
 	else:
-		sound_button.text = "Sound Effects: Off"
+		sound_button.text = "Sound: Off"
 
 func _on_back_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/title_screen.tscn")

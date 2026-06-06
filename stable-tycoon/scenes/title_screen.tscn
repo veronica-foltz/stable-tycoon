@@ -2,15 +2,15 @@
 
 [ext_resource type="Script" uid="uid://bgmg73jc5qjg0" path="res://scenes/title_screen.gd" id="1_v6p8y"]
 [ext_resource type="Texture2D" uid="uid://drbp5rt1os5qe" path="res://assets/images/Stable Tycoon TS.png" id="2_ak2if"]
-[ext_resource type="FontFile" uid="uid://chhb1oen2s5gg" path="res://assets/fonts/Vanilla Whale.otf" id="3_s4lrb"]
+[ext_resource type="FontFile" uid="uid://cqrg3tjofq1e3" path="res://assets/fonts/BroncoPersonalUse.ttf" id="3_s4lrb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s4lrb"]
 bg_color = Color(0.2901961, 0.20392157, 0.14901961, 0.627451)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.7882353, 0.63529414, 0.15294118, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.7607843, 0.6431373, 0.42745098, 1)
 
 [node name="TitleScreen" type="Control" unique_id=932235488]
 layout_mode = 3
@@ -46,23 +46,23 @@ stretch_mode = 6
 
 [node name="StartButton" type="Button" parent="." unique_id=941371321]
 layout_mode = 0
-offset_left = 340.0
-offset_top = 421.0
-offset_right = 527.0
-offset_bottom = 471.0
+offset_left = 324.0
+offset_top = 411.0
+offset_right = 555.0
+offset_bottom = 478.0
 theme_override_fonts/font = ExtResource("3_s4lrb")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_s4lrb")
 text = " Start Game "
 
 [node name="SettingsButton" type="Button" parent="." unique_id=1322746834]
 layout_mode = 0
-offset_left = 338.0
-offset_top = 504.0
-offset_right = 526.0
-offset_bottom = 554.0
+offset_left = 323.0
+offset_top = 501.0
+offset_right = 554.0
+offset_bottom = 566.0
 theme_override_fonts/font = ExtResource("3_s4lrb")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_s4lrb")
 text = "    Settings    "
 
