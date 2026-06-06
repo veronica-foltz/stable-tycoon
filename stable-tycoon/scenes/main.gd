@@ -1,8 +1,5 @@
 extends Control
 
-var hunger = 50
-@onready var hunger_bar = $HungerBar
-
 func _ready():
 	update_hunger_label()
 	update_happiness_label()
@@ -10,9 +7,6 @@ func _ready():
 	update_day_label()
 	update_money_label()
 	update_health_label()
-
-func update_hunger_label():
-	hunger_bar.value = hunger
 
 func _on_feed_button_pressed():
 
@@ -23,7 +17,6 @@ func _on_feed_button_pressed():
 		update_status(" Not enough money to buy feed.")
 		return
 	money -= 5
-	
 	hunger += 10
 	happiness += 5
 	energy += 2
@@ -34,6 +27,12 @@ func _on_feed_button_pressed():
 	update_energy_label()
 	update_status(" You fed the horse. Feed cost $5.")
 
+
+var hunger = 50
+@onready var hunger_bar = $HungerBar
+
+func update_hunger_label():
+	hunger_bar.value = hunger
 
 var happiness = 70
 @onready var happiness_bar = $HappinessBar
@@ -46,7 +45,21 @@ var energy = 80
 
 func update_energy_label():
 	energy_bar.value = energy
+
+var health = 100
+@onready var health_bar = $HealthBar
+
+func update_health_label():
+	health_bar.value = health
+
+
+var money = 100
+@onready var money_label = $MoneyLabel
+
+func update_money_label():
+	money_label.text = "💰 Money: $" + str(money)
 	
+
 var day = 1
 @onready var day_label = $DayLabel
 
@@ -108,13 +121,6 @@ func _on_end_day_button_pressed():
 	update_energy_label()
 	update_money_label()
 	update_health_label()
-
-
-var money = 100
-@onready var money_label = $MoneyLabel
-
-func update_money_label():
-	money_label.text = "💰 Money: $" + str(money)
 
 
 func _on_brush_button_pressed():
@@ -197,13 +203,6 @@ func _on_train_button_pressed():
 	
 func update_status(message):
 	status_label.text = message
-	
-var health = 100
-@onready var health_bar = $HealthBar
-
-func update_health_label():
-	health_bar.value = health
-
 
 func _on_restart_button_pressed() -> void:
 
