@@ -1,7 +1,7 @@
 extends Control
 
 var hunger = 50
-@onready var hunger_label = $HungerLabel
+@onready var hunger_bar = $HungerBar
 
 func _ready():
 	update_hunger_label()
@@ -12,7 +12,7 @@ func _ready():
 	update_health_label()
 
 func update_hunger_label():
-	hunger_label.text = "🍎 Hunger: " + str(hunger)
+	hunger_bar.value = hunger
 
 func _on_feed_button_pressed():
 
@@ -36,16 +36,16 @@ func _on_feed_button_pressed():
 
 
 var happiness = 70
-@onready var happiness_label = $HappinessLabel
+@onready var happiness_bar = $HappinessBar
 
 func update_happiness_label():
-	happiness_label.text = "😊 Happiness: " + str(happiness)
+	happiness_bar.value = happiness
 	
 var energy = 80
-@onready var energy_label = $EnergyLabel
+@onready var energy_bar = $EnergyBar
 
 func update_energy_label():
-	energy_label.text = "⚡ Energy: " + str(energy)
+	energy_bar.value = energy
 	
 var day = 1
 @onready var day_label = $DayLabel
@@ -199,10 +199,10 @@ func update_status(message):
 	status_label.text = message
 	
 var health = 100
-@onready var health_label = $HealthLabel
+@onready var health_bar = $HealthBar
 
 func update_health_label():
-	health_label.text = "❤️ Health: " + str(health)
+	health_bar.value = health
 
 
 func _on_restart_button_pressed() -> void:
