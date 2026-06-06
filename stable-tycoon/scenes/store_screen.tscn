@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cxintycasal83"]
+
+[ext_resource type="Texture2D" uid="uid://c0bovgnp80x3e" path="res://assets/images/Horse Final Picture.png" id="1_v4gmx"]
+
+[node name="StoreScreen" type="Control" unique_id=664717561]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2112434210]
+layout_mode = 0
+offset_right = 1149.0
+offset_bottom = 645.0
+texture = ExtResource("1_v4gmx")
+expand_mode = 1
+
+[node name="OverlayPanel" type="Panel" parent="." unique_id=1844994456]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 646.0

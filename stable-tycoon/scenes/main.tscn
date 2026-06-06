@@ -4,6 +4,23 @@
 [ext_resource type="Texture2D" uid="uid://bj1y44nwuv73d" path="res://assets/images/banner.png" id="3_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://c0bovgnp80x3e" path="res://assets/images/Horse Final Picture.png" id="3_sugp2"]
 [ext_resource type="AudioStream" uid="uid://s8imlkvq7ydw" path="res://assets/audio/music_for_creators-country-fun-131833.mp3" id="4_jyhfs"]
+[ext_resource type="FontFile" uid="uid://cqrg3tjofq1e3" path="res://assets/fonts/BroncoPersonalUse.ttf" id="4_tbgi4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o6xl0"]
+bg_color = Color(0.18431373, 0.105882354, 0.07058824, 0.23921569)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7607843, 0.6431373, 0.42745098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tipki"]
+bg_color = Color(0.18431373, 0.105882354, 0.07058824, 0.47058824)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7607843, 0.6431373, 0.42745098, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wfyh"]
 
@@ -49,135 +66,159 @@ stretch_mode = 6
 
 [node name="StatsPanel" type="Panel" parent="." unique_id=1929536375]
 layout_mode = 0
-offset_left = 85.0
-offset_top = 130.0
-offset_right = 245.0
-offset_bottom = 255.0
-
-[node name="MoneyPanel" type="Panel" parent="." unique_id=18973845]
-layout_mode = 0
-offset_left = 984.0
-offset_top = 32.0
-offset_right = 1118.0
-offset_bottom = 69.0
+offset_left = 794.0
+offset_top = 111.0
+offset_right = 1120.0
+offset_bottom = 350.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_o6xl0")
 
 [node name="Banner" type="TextureRect" parent="." unique_id=1302856123]
 layout_mode = 0
-offset_left = 14.0
-offset_top = -13.0
-offset_right = 326.0
-offset_bottom = 203.0
+offset_left = 20.0
+offset_top = -25.0
+offset_right = 435.0
+offset_bottom = 247.0
 texture = ExtResource("3_jyhfs")
 expand_mode = 1
 
 [node name="FeedButton" type="Button" parent="." unique_id=345679970]
 layout_mode = 0
-offset_left = 53.0
-offset_top = 289.0
-offset_right = 273.0
-offset_bottom = 334.0
+offset_left = 90.0
+offset_top = 153.0
+offset_right = 365.0
+offset_bottom = 226.0
 theme_override_colors/font_hover_color = Color(0.97922903, 0.9612257, 0.9492242, 1)
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_tipki")
 theme_override_styles/hover = SubResource("StyleBoxFlat_0wfyh")
 text = "🍎 Feed Horse"
 
 [node name="HungerLabel" type="Label" parent="." unique_id=2134655799]
 layout_mode = 0
-offset_left = 106.0
-offset_top = 164.0
-offset_right = 213.0
-offset_bottom = 187.0
+offset_left = 802.0
+offset_top = 163.0
+offset_right = 980.0
+offset_bottom = 214.08109
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 36
 text = "🍎 Hunger: 50"
 
 [node name="HappinessLabel" type="Label" parent="." unique_id=1211012208]
 layout_mode = 0
-offset_left = 99.0
-offset_top = 186.0
-offset_right = 229.0
-offset_bottom = 209.0
+offset_left = 800.0
+offset_top = 209.0
+offset_right = 1008.0
+offset_bottom = 260.0811
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 36
 text = "😊 Happiness: 70"
 
 [node name="EnergyLabel" type="Label" parent="." unique_id=222197063]
 layout_mode = 0
-offset_left = 108.0
-offset_top = 206.0
-offset_right = 210.0
-offset_bottom = 230.0
+offset_left = 800.0
+offset_top = 251.0
+offset_right = 973.0
+offset_bottom = 302.0811
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 36
 text = "⚡ Energy: 80"
 
 [node name="DayLabel" type="Label" parent="." unique_id=1117158441]
 layout_mode = 0
-offset_left = 119.0
-offset_top = 139.0
-offset_right = 193.0
-offset_bottom = 162.0
+offset_left = 801.0
+offset_top = 115.0
+offset_right = 921.0
+offset_bottom = 166.08109
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 36
 text = "📅  Day: 1"
 
 [node name="EndDayButton" type="Button" parent="." unique_id=381692743]
 layout_mode = 0
-offset_left = 57.0
-offset_top = 538.0
-offset_right = 277.0
-offset_bottom = 583.0
+offset_left = 114.0
+offset_top = 512.0
+offset_right = 334.0
+offset_bottom = 563.0
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_tipki")
 theme_override_styles/hover = SubResource("StyleBoxFlat_sugp2")
 text = "🌙 End Day"
 
 [node name="MoneyLabel" type="Label" parent="." unique_id=851404742]
 layout_mode = 0
-offset_left = 982.0
-offset_top = 37.0
-offset_right = 1106.0
-offset_bottom = 63.0
+offset_left = 840.0
+offset_top = 31.0
+offset_right = 1021.0
+offset_bottom = 77.344826
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 35
 text = " 💰 Money: $100"
 
 [node name="BrushButton" type="Button" parent="." unique_id=2146063052]
 layout_mode = 0
-offset_left = 52.0
-offset_top = 349.0
-offset_right = 272.0
-offset_bottom = 394.0
+offset_left = 86.0
+offset_top = 243.0
+offset_right = 365.0
+offset_bottom = 308.0
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_tipki")
 theme_override_styles/hover = SubResource("StyleBoxFlat_jyhfs")
 text = "🪥 Brush Horse"
 
 [node name="RestButton" type="Button" parent="." unique_id=211404699]
 layout_mode = 0
-offset_left = 52.0
-offset_top = 402.0
-offset_right = 272.0
-offset_bottom = 447.0
+offset_left = 89.0
+offset_top = 324.0
+offset_right = 367.0
+offset_bottom = 395.0
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_tipki")
 theme_override_styles/hover = SubResource("StyleBoxFlat_tbgi4")
 text = "😴 Let Horse Rest"
 
 [node name="TrainButton" type="Button" parent="." unique_id=827770987]
 layout_mode = 0
-offset_left = 55.0
-offset_top = 457.0
-offset_right = 275.0
-offset_bottom = 502.0
+offset_left = 89.0
+offset_top = 406.0
+offset_right = 368.0
+offset_bottom = 475.0
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_tipki")
 theme_override_styles/hover = SubResource("StyleBoxFlat_tefeu")
 text = "🏋️ Train Horse"
 
 [node name="StatusLabel" type="Label" parent="." unique_id=232731945]
 layout_mode = 0
-offset_left = 807.0
-offset_top = 464.0
-offset_right = 1148.0
-offset_bottom = 509.0
+offset_left = 778.0
+offset_top = 361.0
+offset_right = 1119.0
+offset_bottom = 406.0
 theme_override_font_sizes/font_size = 18
 
 [node name="HealthLabel" type="Label" parent="." unique_id=2082709946]
 layout_mode = 0
-offset_left = 110.0
-offset_top = 227.0
-offset_right = 220.0
-offset_bottom = 250.0
+offset_left = 802.0
+offset_top = 292.0
+offset_right = 981.0
+offset_bottom = 343.0811
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 36
 text = "❤️ Health: 100"
 
 [node name="RestartButton" type="Button" parent="." unique_id=127704067]
 layout_mode = 0
-offset_left = 58.0
-offset_top = 591.0
-offset_right = 278.0
-offset_bottom = 636.0
+offset_left = 115.0
+offset_top = 578.0
+offset_right = 335.0
+offset_bottom = 629.0
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_tipki")
 theme_override_styles/hover = SubResource("StyleBoxFlat_sugp2")
 text = "🔄 Restart Game"
 
@@ -188,19 +229,36 @@ bus = &"Music"
 
 [node name="BackButton" type="Button" parent="." unique_id=2034782787]
 layout_mode = 0
-offset_left = 1016.0
-offset_top = 582.0
-offset_right = 1111.0
-offset_bottom = 627.0
-text = "Back"
+offset_left = 967.0
+offset_top = 557.0
+offset_right = 1110.0
+offset_bottom = 622.0
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_tipki")
+text = "     Back  "
 
 [node name="SettingsButton" type="Button" parent="." unique_id=1515233174]
 layout_mode = 0
-offset_left = 1013.0
-offset_top = 528.0
+offset_left = 965.0
+offset_top = 480.0
 offset_right = 1109.0
-offset_bottom = 572.0
-text = "Settings"
+offset_bottom = 546.0
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_tipki")
+text = "🔧  Settings"
+
+[node name="StoreButton" type="Button" parent="." unique_id=189039589]
+layout_mode = 0
+offset_left = 963.0
+offset_top = 409.0
+offset_right = 1108.0
+offset_bottom = 472.0
+theme_override_fonts/font = ExtResource("4_tbgi4")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_tipki")
+text = "🏪  Store"
 
 [connection signal="pressed" from="FeedButton" to="." method="_on_feed_button_pressed"]
 [connection signal="pressed" from="EndDayButton" to="." method="_on_end_day_button_pressed"]
