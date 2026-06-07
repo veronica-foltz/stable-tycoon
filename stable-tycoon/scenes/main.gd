@@ -290,3 +290,27 @@ func _on_settings_button_pressed():
 
 func _on_store_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/store_screen.tscn")
+
+
+func _on_stat_decay_timer_timeout():
+
+	if game_over:
+		return
+	
+	hunger -= 3
+	happiness -= 2
+	energy -= 2
+	
+	if hunger <= 20 or happiness <= 20 or energy <= 20:
+		health -= 2
+	
+	clamp_stats()
+	
+	update_hunger_label()
+	update_happiness_label()
+	update_energy_label()
+	update_health_label()
+	update_money_label()
+	update_day_label()	
+	
+	update_status("Time passed... your horse needs care.")
