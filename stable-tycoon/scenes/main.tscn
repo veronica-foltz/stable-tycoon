@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://s8imlkvq7ydw" path="res://assets/audio/music_for_creators-country-fun-131833.mp3" id="4_jyhfs"]
 [ext_resource type="FontFile" uid="uid://cqrg3tjofq1e3" path="res://assets/fonts/BroncoPersonalUse.ttf" id="4_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://fh7naon4oex3" path="res://assets/images/Horse Sprite.png" id="6_tefeu"]
+[ext_resource type="Texture2D" uid="uid://cslnpr8k7p1gd" path="res://assets/images/sick horse.png" id="7_o6xl0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o6xl0"]
 bg_color = Color(0.18431373, 0.105882354, 0.07058824, 0.23921569)
@@ -14,6 +15,23 @@ border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
 border_color = Color(0.7607843, 0.6431373, 0.42745098, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tipki"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_tefeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tefeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tefeu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tipki"]
 bg_color = Color(0.18431373, 0.105882354, 0.07058824, 0.47058824)
@@ -63,6 +81,19 @@ offset_top = 109.0
 offset_right = 1120.0
 offset_bottom = 350.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_o6xl0")
+
+[node name="HorseAnimatedSprite" type="AnimatedSprite2D" parent="." unique_id=2018231475]
+position = Vector2(656, 321)
+scale = Vector2(0.7172343, 0.7529904)
+sprite_frames = SubResource("SpriteFrames_tipki")
+frame = 2
+frame_progress = 0.12163105
+
+[node name="SickHorseSprite" type="Sprite2D" parent="." unique_id=1229472232]
+visible = false
+position = Vector2(598.31256, 386.81253)
+scale = Vector2(0.4283696, 0.4207785)
+texture = ExtResource("7_o6xl0")
 
 [node name="Banner" type="TextureRect" parent="." unique_id=1302856123]
 layout_mode = 0
@@ -282,14 +313,6 @@ offset_right = 1103.0
 offset_bottom = 336.0
 theme_override_styles/background = SubResource("StyleBoxFlat_tbgi4")
 theme_override_styles/fill = SubResource("StyleBoxFlat_tefeu")
-
-[node name="HorseSprite" type="Sprite2D" parent="." unique_id=1397823583]
-position = Vector2(639, 322)
-scale = Vector2(0.7577127, 0.7552333)
-texture = ExtResource("6_tefeu")
-
-[node name="HorseAnimationPlayer" type="AnimationPlayer" parent="HorseSprite" unique_id=1445676585]
-root_node = NodePath("../../HorseImage")
 
 [connection signal="pressed" from="FeedButton" to="." method="_on_feed_button_pressed"]
 [connection signal="pressed" from="EndDayButton" to="." method="_on_end_day_button_pressed"]

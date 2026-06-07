@@ -7,6 +7,7 @@ func _ready():
 	update_day_label()
 	update_money_label()
 	update_health_label()
+	update_horse_state()
 
 func _on_feed_button_pressed():
 
@@ -26,7 +27,19 @@ func _on_feed_button_pressed():
 	update_happiness_label()
 	update_energy_label()
 	update_status(" You fed the horse. Feed cost $5.")
+	update_horse_state()
 
+@onready var horse_animated_sprite = $HorseAnimatedSprite
+@onready var sick_horse_sprite = $SickHorseSprite
+
+var horse_normal = preload("res://assets/images/Horse Sprite.png")
+var horse_sick = preload("res://assets/images/sick horse.png")
+
+func update_horse_state():
+
+	var is_sick = hunger <= 40 or happiness <= 40 or energy <= 40 or health <= 40
+	horse_animated_sprite.visible = not is_sick
+	sick_horse_sprite.visible = is_sick
 
 var hunger = 50
 @onready var hunger_bar = $HungerBar
@@ -121,6 +134,7 @@ func _on_end_day_button_pressed():
 	update_energy_label()
 	update_money_label()
 	update_health_label()
+	update_horse_state()
 
 
 func _on_brush_button_pressed():
