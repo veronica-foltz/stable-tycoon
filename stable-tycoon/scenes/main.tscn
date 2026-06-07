@@ -55,6 +55,8 @@ texture = ExtResource("3_sugp2")
 expand_mode = 1
 stretch_mode = 6
 
+[node name="HorseAnimationPlayer" type="AnimationPlayer" parent="HorseImage" unique_id=1445676585]
+
 [node name="StatsPanel" type="Panel" parent="." unique_id=1929536375]
 layout_mode = 0
 offset_left = 824.0
