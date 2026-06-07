@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://cmgda6tb7jxw5"]
 
 [ext_resource type="Script" uid="uid://djb77cmbuwl68" path="res://scenes/main.gd" id="1_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://cl63fdpu2al88" path="res://assets/images/Background.png" id="2_tefeu"]
 [ext_resource type="Texture2D" uid="uid://bj1y44nwuv73d" path="res://assets/images/banner.png" id="3_jyhfs"]
-[ext_resource type="Texture2D" uid="uid://c0bovgnp80x3e" path="res://assets/images/Horse Final Picture.png" id="3_sugp2"]
 [ext_resource type="AudioStream" uid="uid://s8imlkvq7ydw" path="res://assets/audio/music_for_creators-country-fun-131833.mp3" id="4_jyhfs"]
 [ext_resource type="FontFile" uid="uid://cqrg3tjofq1e3" path="res://assets/fonts/BroncoPersonalUse.ttf" id="4_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://fh7naon4oex3" path="res://assets/images/Horse Sprite.png" id="6_tefeu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o6xl0"]
 bg_color = Color(0.18431373, 0.105882354, 0.07058824, 0.23921569)
@@ -46,16 +47,14 @@ color = Color(0.6901961, 0.5372549, 0.40784314, 1)
 
 [node name="HorseImage" type="TextureRect" parent="." unique_id=1419472070]
 layout_mode = 0
-offset_left = 1.0
+offset_left = -1.0
 offset_top = 1.0
-offset_right = 2558.7778
+offset_right = 2556.7778
 offset_bottom = 1436.5557
 scale = Vector2(0.45, 0.45)
-texture = ExtResource("3_sugp2")
+texture = ExtResource("2_tefeu")
 expand_mode = 1
 stretch_mode = 6
-
-[node name="HorseAnimationPlayer" type="AnimationPlayer" parent="HorseImage" unique_id=1445676585]
 
 [node name="StatsPanel" type="Panel" parent="." unique_id=1929536375]
 layout_mode = 0
@@ -283,6 +282,14 @@ offset_right = 1103.0
 offset_bottom = 336.0
 theme_override_styles/background = SubResource("StyleBoxFlat_tbgi4")
 theme_override_styles/fill = SubResource("StyleBoxFlat_tefeu")
+
+[node name="HorseSprite" type="Sprite2D" parent="." unique_id=1397823583]
+position = Vector2(639, 322)
+scale = Vector2(0.7577127, 0.7552333)
+texture = ExtResource("6_tefeu")
+
+[node name="HorseAnimationPlayer" type="AnimationPlayer" parent="HorseSprite" unique_id=1445676585]
+root_node = NodePath("../../HorseImage")
 
 [connection signal="pressed" from="FeedButton" to="." method="_on_feed_button_pressed"]
 [connection signal="pressed" from="EndDayButton" to="." method="_on_end_day_button_pressed"]
