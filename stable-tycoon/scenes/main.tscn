@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bj1y44nwuv73d" path="res://assets/images/banner.png" id="3_jyhfs"]
 [ext_resource type="AudioStream" uid="uid://s8imlkvq7ydw" path="res://assets/audio/music_for_creators-country-fun-131833.mp3" id="4_jyhfs"]
 [ext_resource type="FontFile" uid="uid://cqrg3tjofq1e3" path="res://assets/fonts/BroncoPersonalUse.ttf" id="4_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://c1jc08muy5n3h" path="res://assets/images/HorseAnimationBlinkin.png" id="4_tipki"]
 [ext_resource type="Texture2D" uid="uid://fh7naon4oex3" path="res://assets/images/Horse Sprite.png" id="6_tefeu"]
 [ext_resource type="Texture2D" uid="uid://cslnpr8k7p1gd" path="res://assets/images/sick horse.png" id="7_o6xl0"]
 
@@ -24,6 +25,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("6_tefeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_tipki")
 }, {
 "duration": 1.0,
 "texture": ExtResource("6_tefeu")
@@ -86,8 +90,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_o6xl0")
 position = Vector2(656, 321)
 scale = Vector2(0.7172343, 0.7529904)
 sprite_frames = SubResource("SpriteFrames_tipki")
-frame = 2
-frame_progress = 0.12163105
+frame_progress = 0.20528689
 
 [node name="SickHorseSprite" type="Sprite2D" parent="." unique_id=1229472232]
 visible = false

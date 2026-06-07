@@ -8,6 +8,7 @@ func _ready():
 	update_money_label()
 	update_health_label()
 	update_horse_state()
+	$HorseAnimatedSprite.play("default")
 
 func _on_feed_button_pressed():
 
