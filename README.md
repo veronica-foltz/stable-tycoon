@@ -47,14 +47,7 @@ Future Plans
 * Stable upgrades
 * Sound effects and music improvements
 
-Play The Game
+Playable Version
 
-Playable browser version available on itch.io.
+veronica-foltz.itch.io/stable-tycoon 
 
-Screenshots
-
-
-
-Author
-
-Veronica Foltz
