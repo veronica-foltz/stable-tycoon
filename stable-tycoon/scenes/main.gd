@@ -1,5 +1,7 @@
 extends Control
 
+var premium_feed_unlocked = false
+
 func _ready():
 	update_hunger_label()
 	update_happiness_label()
@@ -18,16 +20,25 @@ func _on_feed_button_pressed():
 	if money < 5:
 		update_status(" Not enough money to buy feed.")
 		return
+	
 	money -= 5
-	hunger += 10
+	
+	if premium_feed_unlocked:
+		hunger += 20
+		update_status(" You used premium feed!")
+	else:
+		hunger += 10
+		update_status(" You fed the horse.")
+	
 	happiness += 5
 	energy += 2
+	
 	clamp_stats()
+	
 	update_money_label()
 	update_hunger_label()
 	update_happiness_label()
 	update_energy_label()
-	update_status(" You fed the horse. Feed cost $5.")
 	update_horse_state()
 
 @onready var horse_animated_sprite = $HorseAnimatedSprite
