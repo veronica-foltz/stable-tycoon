@@ -28,7 +28,7 @@ func _on_feed_button_pressed():
 		update_status(" You used premium feed!")
 	else:
 		hunger += 10
-		update_status(" You fed the horse.")
+		update_status(" You fed the horse -5.")
 	
 	happiness += 5
 	energy += 2
@@ -211,7 +211,7 @@ func _on_train_button_pressed():
 		update_status(" Your horse is too hungry to train.")
 		return
 	
-	money += 25
+	money += 10
 	energy -= 15
 	hunger -= 10
 	happiness += 5
@@ -225,7 +225,7 @@ func _on_train_button_pressed():
 	update_energy_label()
 	update_hunger_label()
 	update_happiness_label()
-	update_status(" Your horse trained and earned 25!")
+	update_status(" Your horse trained and earned 10!")
 	
 func update_status(message):
 	status_label.text = message
