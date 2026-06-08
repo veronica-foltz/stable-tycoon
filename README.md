@@ -47,5 +47,7 @@ Future Plans
 * Stable upgrades
 * Sound effects and music improvements
 
+Playable Version
 
+veronica-foltz.itch.io/stable-tycoon 
 
