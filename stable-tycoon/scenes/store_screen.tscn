@@ -29,6 +29,14 @@ border_width_right = 3
 border_width_bottom = 3
 border_color = Color(0.7607843, 0.6431373, 0.42745098, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ttysb"]
+bg_color = Color(0.2901961, 0.20392157, 0.14901961, 0.627451)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.7607843, 0.6431373, 0.42745098, 1)
+
 [node name="StoreScreen" type="Control" unique_id=664717561]
 layout_mode = 3
 anchors_preset = 15
@@ -122,6 +130,17 @@ theme_override_fonts/font = ExtResource("3_6yotf")
 theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxFlat_7rjp1")
 text = "Back"
+
+[node name="UpgradeHorseButton" type="Button" parent="." unique_id=1828241089]
+layout_mode = 0
+offset_left = 732.0
+offset_top = 184.0
+offset_right = 1117.0
+offset_bottom = 286.0
+theme_override_fonts/font = ExtResource("3_6yotf")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_ttysb")
+text = "Upgrade Horse: Coming Soon!"
 
 [connection signal="pressed" from="BetterFeedButton" to="." method="_on_better_feed_button_pressed"]
 [connection signal="pressed" from="GroomingKitButton" to="." method="_on_grooming_kit_button_pressed"]
