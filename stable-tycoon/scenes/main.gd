@@ -225,7 +225,7 @@ func _on_train_button_pressed():
 	update_energy_label()
 	update_hunger_label()
 	update_happiness_label()
-	update_status(" Your horse trained and earned $25!")
+	update_status(" Your horse trained and earned 25!")
 	
 func update_status(message):
 	status_label.text = message

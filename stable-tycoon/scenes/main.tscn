@@ -215,10 +215,10 @@ text = "Train Horse"
 
 [node name="StatusLabel" type="Label" parent="." unique_id=232731945]
 layout_mode = 0
-offset_left = 368.0
-offset_top = 586.0
-offset_right = 709.0
-offset_bottom = 638.0
+offset_left = 394.0
+offset_top = 654.0
+offset_right = 735.0
+offset_bottom = 706.0
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 42
 
