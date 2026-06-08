@@ -47,14 +47,5 @@ Future Plans
 * Stable upgrades
 * Sound effects and music improvements
 
-Play The Game
-
-Playable browser version available on itch.io.
-
-Screenshots
 
 
-
-Author
-
-Veronica Foltz
