@@ -82,7 +82,7 @@ var money = 100
 @onready var money_label = $MoneyLabel
 
 func update_money_label():
-	money_label.text = "💰 Money: $" + str(money)
+	money_label.text = "Money: " + str(money)
 	
 
 var day = 1
@@ -91,7 +91,7 @@ var day = 1
 @onready var status_label = $StatusLabel
 
 func update_day_label():
-	day_label.text = "📅  Day: " + str(day)
+	day_label.text = "Day: " + str(day)
 
 func _on_end_day_button_pressed():
 	
@@ -258,10 +258,10 @@ func random_daily_event():
 	var event = randi_range(1, 4)
 	if event == 1:
 		money += 20
-		update_status(" A rider tipped you $20!")
+		update_status(" A rider tipped you 20!")
 	elif event == 2:
 		money -= 15
-		update_status(" You had to buy extra hay. -$15")
+		update_status(" You had to buy extra hay. -15")
 	elif event == 3:
 		happiness += 10
 		if happiness > 100:

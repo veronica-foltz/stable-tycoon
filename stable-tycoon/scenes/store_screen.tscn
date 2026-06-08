@@ -40,15 +40,15 @@ script = ExtResource("1_6yotf")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=2112434210]
 layout_mode = 0
-offset_right = 1149.0
-offset_bottom = 645.0
+offset_right = 1281.0
+offset_bottom = 717.0
 texture = ExtResource("1_v4gmx")
 expand_mode = 1
 
 [node name="OverlayPanel" type="Panel" parent="." unique_id=1844994456]
 layout_mode = 0
-offset_right = 1151.0
-offset_bottom = 646.0
+offset_right = 1284.0
+offset_bottom = 716.0
 
 [node name="ComingSoonLabel" type="Label" parent="." unique_id=924129358]
 visible = false
@@ -63,65 +63,65 @@ text = "Coming Soon!"
 
 [node name="TitlePanel" type="Panel" parent="." unique_id=1534644015]
 layout_mode = 0
-offset_left = 470.0
-offset_top = 11.0
-offset_right = 654.0
-offset_bottom = 77.0
+offset_left = 565.0
+offset_top = 15.0
+offset_right = 749.0
+offset_bottom = 81.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_wq32e")
 
 [node name="StoreLabel" type="Label" parent="." unique_id=683185857]
 layout_mode = 0
-offset_left = 492.0
-offset_top = 9.0
-offset_right = 638.0
-offset_bottom = 73.431816
+offset_left = 618.0
+offset_top = 22.0
+offset_right = 764.0
+offset_bottom = 86.431816
 theme_override_fonts/font = ExtResource("3_6yotf")
 theme_override_font_sizes/font_size = 45
-text = "🏪 Store"
+text = "Store"
 
 [node name="BetterFeedButton" type="Button" parent="." unique_id=1675458654]
 layout_mode = 0
-offset_left = 161.0
-offset_top = 331.0
-offset_right = 528.0
-offset_bottom = 386.0
+offset_left = 179.0
+offset_top = 419.0
+offset_right = 573.0
+offset_bottom = 512.0
 theme_override_fonts/font = ExtResource("3_6yotf")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_6yotf")
-text = "🌾 Premium Feed: Coming Soon!"
+text = "Premium Feed: Coming Soon!"
 
 [node name="GroomingKitButton" type="Button" parent="." unique_id=1207910330]
 layout_mode = 0
-offset_left = 159.0
-offset_top = 249.0
-offset_right = 528.0
-offset_bottom = 304.0
+offset_left = 175.0
+offset_top = 309.0
+offset_right = 570.0
+offset_bottom = 395.0
 theme_override_fonts/font = ExtResource("3_6yotf")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_6yotf")
-text = "🪥 Grooming Kit: Coming Soon!"
+text = "Grooming Kit: Coming Soon!"
 
 [node name="EnergyTreatButton" type="Button" parent="." unique_id=487897942]
 layout_mode = 0
-offset_left = 160.0
-offset_top = 170.0
-offset_right = 526.0
-offset_bottom = 225.0
+offset_left = 176.0
+offset_top = 183.0
+offset_right = 567.0
+offset_bottom = 285.0
 theme_override_fonts/font = ExtResource("3_6yotf")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_6yotf")
-text = "⚡ Energy Treats: Coming Soon!"
+text = "Energy Treats: Coming Soon!"
 
 [node name="BackButton" type="Button" parent="." unique_id=1463727115]
 layout_mode = 0
-offset_left = 878.0
-offset_top = 526.0
-offset_right = 1126.0
-offset_bottom = 619.0
+offset_left = 992.0
+offset_top = 580.0
+offset_right = 1240.0
+offset_bottom = 673.0
 theme_override_fonts/font = ExtResource("3_6yotf")
 theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxFlat_7rjp1")
-text = "⬅  Back"
+text = "Back"
 
 [connection signal="pressed" from="BetterFeedButton" to="." method="_on_better_feed_button_pressed"]
 [connection signal="pressed" from="GroomingKitButton" to="." method="_on_grooming_kit_button_pressed"]
