@@ -112,9 +112,9 @@ expand_mode = 1
 
 [node name="FeedButton" type="Button" parent="." unique_id=345679970]
 layout_mode = 0
-offset_left = 88.0
+offset_left = 93.0
 offset_top = 172.0
-offset_right = 363.0
+offset_right = 368.0
 offset_bottom = 245.0
 theme_override_colors/font_hover_color = Color(0.97922903, 0.9612257, 0.9492242, 1)
 theme_override_fonts/font = ExtResource("4_tbgi4")
@@ -185,9 +185,9 @@ text = " Money: 100"
 
 [node name="BrushButton" type="Button" parent="." unique_id=2146063052]
 layout_mode = 0
-offset_left = 84.0
+offset_left = 89.0
 offset_top = 262.0
-offset_right = 363.0
+offset_right = 368.0
 offset_bottom = 327.0
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 42
@@ -196,9 +196,9 @@ text = "Brush Horse"
 
 [node name="RestButton" type="Button" parent="." unique_id=211404699]
 layout_mode = 0
-offset_left = 87.0
+offset_left = 92.0
 offset_top = 343.0
-offset_right = 365.0
+offset_right = 370.0
 offset_bottom = 414.0
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 42
@@ -207,9 +207,9 @@ text = "Let Horse Rest"
 
 [node name="TrainButton" type="Button" parent="." unique_id=827770987]
 layout_mode = 0
-offset_left = 87.0
+offset_left = 92.0
 offset_top = 425.0
-offset_right = 366.0
+offset_right = 371.0
 offset_bottom = 494.0
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 42
