@@ -8,6 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://c1jc08muy5n3h" path="res://assets/images/HorseAnimationBlinkin.png" id="4_tipki"]
 [ext_resource type="Texture2D" uid="uid://fh7naon4oex3" path="res://assets/images/Horse Sprite.png" id="6_tefeu"]
 [ext_resource type="Texture2D" uid="uid://cslnpr8k7p1gd" path="res://assets/images/sick horse.png" id="7_o6xl0"]
+[ext_resource type="Texture2D" uid="uid://x2v4rx57h8hu" path="res://assets/icons/arrow_back_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" id="9_ya4ey"]
+[ext_resource type="Texture2D" uid="uid://dnqiof1vrgc4f" path="res://assets/icons/settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" id="10_eb6dy"]
+[ext_resource type="Texture2D" uid="uid://bnyaq03as3agx" path="res://assets/icons/store_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" id="11_trceg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o6xl0"]
 bg_color = Color(0.18431373, 0.105882354, 0.07058824, 0.23921569)
@@ -257,7 +260,14 @@ offset_bottom = 671.0
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_tipki")
-text = "  Back  "
+
+[node name="Icon" type="TextureRect" parent="BackButton" unique_id=828659903]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 9.0
+offset_right = 101.0
+offset_bottom = 51.0
+texture = ExtResource("9_ya4ey")
 
 [node name="SettingsButton" type="Button" parent="." unique_id=1515233174]
 layout_mode = 0
@@ -268,7 +278,14 @@ offset_bottom = 595.0
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_tipki")
-text = "Settings"
+
+[node name="Icon" type="TextureRect" parent="SettingsButton" unique_id=1749948010]
+layout_mode = 0
+offset_left = 51.0
+offset_top = 14.0
+offset_right = 101.0
+offset_bottom = 61.0
+texture = ExtResource("10_eb6dy")
 
 [node name="StoreButton" type="Button" parent="." unique_id=189039589]
 layout_mode = 0
@@ -279,7 +296,14 @@ offset_bottom = 521.0
 theme_override_fonts/font = ExtResource("4_tbgi4")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_tipki")
-text = "Store"
+
+[node name="Icon" type="TextureRect" parent="StoreButton" unique_id=422144374]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 4.0
+offset_right = 98.0
+offset_bottom = 53.0
+texture = ExtResource("11_trceg")
 
 [node name="HungerBar" type="ProgressBar" parent="." unique_id=1060055224]
 layout_mode = 0
